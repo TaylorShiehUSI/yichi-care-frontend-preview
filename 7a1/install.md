@@ -1,16 +1,11 @@
 # 憶起照顧 7A1 安裝與使用
 
-1. 在 [7A1 目錄](https://taylorshiehusi.github.io/yichi-care-frontend-preview/7a1/) 下載 [Chrome 擴充功能 ZIP](https://taylorshiehusi.github.io/yichi-care-frontend-preview/7a1/yichi-care-7a1-bridge-0.3.2.zip) 並解壓。
-2. 使用準備試用的 Chrome 設定檔開啟 `chrome://extensions`，啟用「開發人員模式」，選「載入未封裝項目」，選取含 `manifest.json` 的解壓資料夾。確認版本為 0.3.2，ID 為 `nmicdjkjccfmpkpgiibjnnabonhaoppk`。
-3. 在同一設定檔登入自己的 Google 帳號，開啟 [指定 NotebookLM 筆記本](https://notebook.google.com/notebook/8242fbbf-ed59-4541-93db-4e3c7eb4d275)，只保留一個該筆記本分頁。打開來源面板，可單選、多選或全選。
-4. 開啟或重新整理 [7A1](https://taylorshiehusi.github.io/yichi-care-frontend-preview/7a1/)。輸入問題並按「查詢」。原始回答顯示於右欄，點引用標題即可展開。窄版的原答在語氣區塊下方。
-5. 若語氣試用已開放，展開左欄「預覽將送給 Cloud Run／Vertex AI 的回答段落」，確認內容。首次輸入團隊發給你的試用通行碼，再按「送出並調整語氣」。改寫沒有產出時，原答可照常閱讀。
-6. 再查一題時，畫面更新成最新一題。NotebookLM 保留先前的聊天紀錄，可能參考前文。
+1. 下載並解壓 [Chrome 擴充功能 v0.3.3](./yichi-care-7a1-bridge-0.3.3.zip)。
+2. 在 Chrome 的 chrome://extensions 啟用開發人員模式，選「載入未封裝項目」，選取含 manifest.json 的資料夾。若已安裝舊版，替換原資料夾的內容後按「重新載入」。
+3. 使用同一個 Chrome 設定檔和自己的 Google 帳號，開啟 [指定 NotebookLM 筆記本](https://notebook.google.com/notebook/8242fbbf-ed59-4541-93db-4e3c7eb4d275)。只保留一個該筆記本分頁。更新擴充功能後請重新整理兩個分頁。
+4. 到 [7A1 試用頁](./)，輸入問題並按「查詢」。橋接會在提問前嘗試全選來源，並把最新一題的 NotebookLM 原答和可取得的引用顯示在單欄。
+5. 展開引用查看引文。圖卡請在 NotebookLM 的原回答中查看。引用讀取不完整時仍會顯示原答。
 
-試用 ZIP SHA-256：`20c115e22539569eecd15e1943eda8b2d4918fa62a04d524af41ed689d3fdc91`。
+NotebookLM 保留聊天歷史，可能參考前文。此版直接顯示 NotebookLM 的回答。
 
-若已安裝舊版，請用新版解壓資料夾取代原資料夾內容，並在擴充功能頁按重新載入，再重新整理 NotebookLM 與 7A1 兩個分頁。
-
-輸入時請避開真實個資。頁面會檢查可辨識的手機號碼、身分證字號與電子郵件格式，仍請在送雲前自行核對預覽。回答與改寫尚未經專家覆核。
-
-圖像型引用會列出來源和編號，圖卡請回 NotebookLM 的原回答查看。含圖像型引用的回答會留在原答視窗，不送雲改寫。
+ZIP SHA-256：5010bea643e9232fdbaf829ea2f945f1a3923e3ac842bf782d513677bb1faf2a
